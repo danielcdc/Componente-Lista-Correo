@@ -3,10 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CorreoComponent} from './correo/correo.component'
+import { ListaCorreoComponent } from './lista-correo/lista-correo.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CorreoComponent,
+    ListaCorreoComponent
   ],
   imports: [
     BrowserModule,
