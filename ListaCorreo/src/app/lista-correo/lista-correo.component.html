@@ -1,6 +1,7 @@
 <h1>Componente Lista de Correos</h1>
-<table>
-    <tr>
+<table style="width: 100%; border: 1px solid gray;">
+    <!-- Comentamos la inserción de variables para utilizar un bucle for
+        <tr>
         <td>{{correos[0].emisor}}</td>
         <td>{{correos[0].titulo}}</td>
     </tr>
@@ -8,4 +9,19 @@
         <td>{{correos[1].emisor}}</td>
         <td>{{correos[1].titulo}}</td>
     </tr>
+    -->
+    <th>Emisor</th>
+    <th>Titulo</th>
+    <th>Destinatario</th>
+    <th>Cuerpo</th>
+    <th>¿Leído?</th>
+    <tr *ngFor="let correo of correos">
+        <td style="border: 1px solid red;">{{correo.emisor}}</td>
+        <td style="border: 1px solid red;">{{correo.titulo}}</td>
+        <td style="border: 1px solid red;">{{correo.destinatario}}</td>
+        <td style="border: 1px solid red;">{{correo.cuerpo}}</td>
+        <td style="border: 1px solid red;" *ngIf="correo.leido">Sí</td>
+        <td style="border: 1px solid red;" *ngIf="!correo.leido">No</td>
+    </tr>
+
 </table>
