@@ -1,2 +1,2 @@
 # Componente-Lista-Correo
-2º Ejercicio de Angular 8: Probando las directivas ngFor y ngIf
+3er Ejercicio de Angular 8: Comunicación Padre-Hijo (12/11/2020)
